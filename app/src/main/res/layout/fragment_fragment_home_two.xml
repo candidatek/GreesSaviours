@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHomeTwo">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/logotwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteTrans">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:background="#ea4a52"
+            app:layout_constraintBottom_toTopOf="@+id/mid_belt_forty"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/main_logo"
+                android:layout_width="210dp"
+                android:layout_height="105dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/whitelogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mid_belt_forty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="339dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/bottom_belt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="2dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/whitebox"
+            android:layout_width="340dp"
+            android:layout_height="215dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_white_box"
+            android:paddingBottom="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+            <TextView
+                android:id="@+id/display_drive_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/drive_name"
+                android:textColor="#8ea6b4"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/drive_name" />
+
+            <TextView
+                android:id="@+id/data_drivename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Mini Forest - Jamboti "
+                android:textColor="#8ea6b4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/drive_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/drive_date"
+                android:textColor="#8ea6b4"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/display_drive_name" />
+
+            <TextView
+                android:id="@+id/driveLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/drive_location"
+                android:textColor="#8ea6b4"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/data_assembly" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <TextView
+                android:id="@+id/data_drivelocation"
+                android:layout_width="190dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="asdas asd asdasd asd "
+                android:textAlignment="center"
+                android:textColor="#8ea6b6"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/data_assembly" />
+
+            <TextView
+                android:id="@+id/data_drivedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="22-07-2018"
+                android:textColor="#8ea6b4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/data_drivename" />
+
+            <TextView
+                android:id="@+id/assembly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/assembly"
+                android:textColor="#8ea6b4"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/assembly_time" />
+
+            <TextView
+                android:id="@+id/data_assembly"
+                android:layout_width="190dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Hari Mandir ."
+                android:textAlignment="viewStart"
+                android:textColor="#8ea6b4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/assembly_time"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/assembly_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/assembly_time"
+                android:textColor="#8ea6b4"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/drive_date" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Sharp 6:30 AM"
+                android:textColor="#8ea6b4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/assembly_time"
+                app:layout_constraintTop_toBottomOf="@+id/drive_date" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/question_members"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/question_m"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/whitebox"
+            app:layout_constraintTop_toBottomOf="@+id/whitebox" />
+
+        <Button
+            android:id="@+id/minusbutton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/sharp_remove_circle_outline_black_48dp"
+            app:layout_constraintStart_toEndOf="@+id/question_members"
+            app:layout_constraintTop_toBottomOf="@+id/whitebox" />
+
+        <TextView
+            android:id="@+id/display_number_t"
+            android:layout_width="25dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:text="2"
+            android:textSize="32sp"
+            app:layout_constraintStart_toEndOf="@+id/minusbutton"
+            app:layout_constraintTop_toBottomOf="@+id/whitebox" />
+
+        <Button
+            android:id="@+id/plusbutton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/baseline_add_circle_outline_black_48dp"
+            app:layout_constraintStart_toEndOf="@+id/display_number_t"
+            app:layout_constraintTop_toBottomOf="@+id/whitebox" />
+
+        <Button
+            android:id="@+id/attendbutton"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/round_red"
+            android:text="@string/attending"
+            android:textColor="@color/fullWhite"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/getcar"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/question_members"
+            app:layout_constraintTop_toBottomOf="@+id/question_members" />
+
+        <CheckBox
+            android:id="@+id/check_yes"
+            android:layout_width="66dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/yes"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/question_members" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
